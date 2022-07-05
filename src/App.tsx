@@ -1,14 +1,23 @@
-import Component from "./components/Component";
-import CustomThemeButton from "./components/Test/button/CustomThemeButton";
-import UniqueButton from "./components/Test/button/UniqueButton";
+import { Stack } from "@mui/material";
+import Box from "@mui/material/Box";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Header/Navbar/Navbar";
+import LeftSideBar from "./components/Sidebar/left-side-bar/left-side-bar";
+import RightSideBar from "./components/Sidebar/right-side-bar/right-side-bar";
 
 function App() {
   return (
-    <div>
-      <Component></Component>
-      <UniqueButton></UniqueButton>
-      <CustomThemeButton></CustomThemeButton>
-    </div>
+    <Box>
+      <Stack direction="column" spacing={1.5}>
+        <Stack spacing={2} justifyContent="space-between" direction="row">
+          <LeftSideBar></LeftSideBar>
+          <Navbar></Navbar>
+          <RightSideBar></RightSideBar>
+        </Stack>
+
+        <Footer></Footer>
+      </Stack>
+    </Box>
   );
 }
 
