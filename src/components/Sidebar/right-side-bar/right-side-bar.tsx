@@ -1,6 +1,6 @@
 // Test -------------------------- Importing the Packages ---------------------------------
-import { Box } from '@mui/material'
-import React from 'react'
+import { Box } from "@mui/material";
+import React from "react";
 
 // Test -------------------------- Importing the styles / other components ----------------
 
@@ -9,9 +9,16 @@ import React from 'react'
 // Test -------------------------- The current component ----------------------------------
 const RightSideBar = () => {
   return (
-    <Box bgcolor="pink" flex={1} p={2}>RightSideBar</Box>
-  )
-}
+    <Box
+      bgcolor="pink"
+      flex={1}
+      p={2}
+      sx={{ display: { xs: "none", sm: "block" } }}
+    >
+      RightSideBar
+    </Box>
+  );
+};
 
 // Test -------------------------- Exporting the current component ------------------------
-export default RightSideBar
+export default RightSideBar;

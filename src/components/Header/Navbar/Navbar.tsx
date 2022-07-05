@@ -8,7 +8,11 @@ import { Box } from "@mui/material";
 
 // Test -------------------------- The current component ----------------------------------
 const Navbar = () => {
-  return <Box bgcolor="violet" flex={5} p={2}>Navbar</Box>;
+  return (
+    <Box bgcolor="violet" flex={5} p={2} m={0}>
+      Navbar
+    </Box>
+  );
 };
 
 // Test -------------------------- Exporting the current component ------------------------

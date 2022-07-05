@@ -8,9 +8,17 @@ import { Box } from "@mui/material";
 
 // Test -------------------------- The current component ----------------------------------
 const LeftSideBar = () => {
-  return <Box bgcolor="burlywood" flex={1} p={2}>LeftSideBar</Box>;
+  return (
+    <Box
+      bgcolor="burlywood"
+      flex={1}
+      p={2}
+      sx={{ display: { xs: "none", sm: "block" } }}
+    >
+      LeftSideBar
+    </Box>
+  );
 };
-
 
 // Test -------------------------- Exporting the current component ------------------------
 export default LeftSideBar;
