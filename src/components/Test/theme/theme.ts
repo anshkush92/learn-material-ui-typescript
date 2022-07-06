@@ -1,6 +1,3 @@
-// Link ---> https://mui.com/material-ui/customization/theming/#custom-variables
-// https://stackoverflow.com/questions/59365396/how-to-use-material-ui-custom-theme-in-react-with-typescript
-// https://www.youtube.com/watch?v=ZyQlpX7lCRE
 // Test -------------------------- Importing the Packages ---------------------------------
 import { createTheme } from "@mui/material/styles";
 import { colors } from "@mui/material";

@@ -1,9 +1,14 @@
-// https://mui.com/material-ui/customization/breakpoints/#default-breakpoints
-// https://mui.com/material-ui/react-badge/#api
-// https://mui.com/material-ui/react-avatar/#image-avatars
-
 // Test -------------------------- Importing the Packages ---------------------------------
-import { AppBar, Typography, InputBase, Badge, Avatar } from "@mui/material";
+import { useState } from "react";
+import {
+  AppBar,
+  Typography,
+  InputBase,
+  Badge,
+  Avatar,
+  Menu,
+  MenuItem,
+} from "@mui/material";
 import {
   CatchingPokemon,
   Mail,
@@ -20,6 +25,20 @@ import { StyledToolBar } from "./StyledToolbar";
 
 // Test -------------------------- The current component ----------------------------------
 const Navbar = () => {
+  const [anchorElement, setOpenMenu] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorElement);
+
+  const anchorElementClickHandler = (
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    console.log("ICon Butotn clicked");
+    setOpenMenu(event.currentTarget);
+  };
+
+  const closeMenuHandler = () => {
+    setOpenMenu(null);
+  };
+
   return (
     <AppBar position="static">
       <StyledToolBar>
@@ -54,6 +73,7 @@ const Navbar = () => {
           <Avatar
             alt="Ansh Singh"
             src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            onClick={anchorElementClickHandler}
           ></Avatar>
         </Icons>
 
@@ -61,12 +81,19 @@ const Navbar = () => {
           <Avatar
             alt="Ansh Singh"
             src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            onClick={anchorElementClickHandler}
           ></Avatar>
-          <Typography variant="body1" component="span">
+          <Typography variant="body1" component="span" sx={{ color: "white" }}>
             Ansh
           </Typography>
         </UserBox>
       </StyledToolBar>
+
+      <Menu open={open} anchorEl={anchorElement} onClose={closeMenuHandler}>
+        <MenuItem onClick={closeMenuHandler}>Profile</MenuItem>
+        <MenuItem onClick={closeMenuHandler}>My Account</MenuItem>
+        <MenuItem onClick={closeMenuHandler}>Logout</MenuItem>
+      </Menu>
     </AppBar>
   );
 };

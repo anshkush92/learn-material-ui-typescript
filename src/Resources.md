@@ -1,0 +1,11 @@
+- [InputBase API](https://mui.com/material-ui/api/input-base/#main-content)
+- [AppBar](https://mui.com/material-ui/react-app-bar/)
+- [Stack](https://mui.com/material-ui/react-stack/)
+
+- [Breakpoints](https://mui.com/material-ui/customization/breakpoints/#default-breakpoints)
+- [Badge](https://mui.com/material-ui/react-badge/#api)
+- [Image Avatar](https://mui.com/material-ui/react-avatar/#image-avatars)
+- [Menu](https://mui.com/material-ui/react-menu/#basic-menu)
+- [Theme Customization](https://mui.com/material-ui/customization/theming/#custom-variables)
+- [Theme Creation TS](https://stackoverflow.com/questions/59365396/how-to-use-material-ui-custom-theme-in-react-with-typescript)
+- [Theme Creation TS Video](https://www.youtube.com/watch?v=ZyQlpX7lCRE)
