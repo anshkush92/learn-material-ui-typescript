@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 
 // Packages
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "@mui/material";
+import { StyledEngineProvider, ThemeProvider } from "@mui/material";
 
 // Styles
 
@@ -20,7 +20,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <App />
+        <StyledEngineProvider injectFirst>
+          <App />
+        </StyledEngineProvider>
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
