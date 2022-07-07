@@ -14,3 +14,5 @@
 - [Button](https://mui.com/material-ui/react-button/#basic-button)
 - [ToolTip](https://mui.com/material-ui/react-tooltip/#main-content)
 - [Custom Component ToolTip](https://stackoverflow.com/questions/57527896/material-ui-tooltip-doesnt-display-on-custom-component-despite-spreading-props)
+- [Card](https://mui.com/material-ui/react-card/#basic-card)
+- [Checkboxes](https://mui.com/material-ui/react-checkbox/#main-content)

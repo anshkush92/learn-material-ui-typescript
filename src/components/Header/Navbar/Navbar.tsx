@@ -56,7 +56,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <StyledToolBar>
         <Typography
           variant="h4"

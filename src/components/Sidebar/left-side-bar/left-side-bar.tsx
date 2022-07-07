@@ -25,14 +25,28 @@ const LeftSideBar = () => {
       p={2}
       sx={{ display: { xs: "none", sm: "block" } }}
     >
-      <List>
-        <ListWhole icon={<Home></Home>} link="/home">Home</ListWhole>
-        <ListWhole icon={<TextSnippet></TextSnippet>} link="/pages">Pages</ListWhole>
-        <ListWhole icon={<Group></Group>} link="/group">Group</ListWhole>
-        <ListWhole icon={<Storefront></Storefront>} link="/market">Marketplace</ListWhole>
-        <ListWhole icon={<Person></Person>} link="/friends">Friends</ListWhole>
-        <ListWhole icon={<Settings></Settings>} link="/settings">Settings</ListWhole>
-        <ListWhole icon={<ContactPage></ContactPage>} link="/profile">Profile</ListWhole>
+      <List sx={{position: "fixed"}}>
+        <ListWhole icon={<Home></Home>} link="/home">
+          Home
+        </ListWhole>
+        <ListWhole icon={<TextSnippet></TextSnippet>} link="/pages">
+          Pages
+        </ListWhole>
+        <ListWhole icon={<Group></Group>} link="/group">
+          Group
+        </ListWhole>
+        <ListWhole icon={<Storefront></Storefront>} link="/market">
+          Marketplace
+        </ListWhole>
+        <ListWhole icon={<Person></Person>} link="/friends">
+          Friends
+        </ListWhole>
+        <ListWhole icon={<Settings></Settings>} link="/settings">
+          Settings
+        </ListWhole>
+        <ListWhole icon={<ContactPage></ContactPage>} link="/profile">
+          Profile
+        </ListWhole>
       </List>
     </Box>
   );
