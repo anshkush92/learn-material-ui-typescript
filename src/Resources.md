@@ -1,3 +1,4 @@
+- [Access Props of 3rd party Library TypeScript](https://stackoverflow.com/questions/43230765/typescript-react-access-component-property-types)
 - [InputBase API](https://mui.com/material-ui/api/input-base/#main-content)
 - [AppBar](https://mui.com/material-ui/react-app-bar/)
 - [Stack](https://mui.com/material-ui/react-stack/)
@@ -9,3 +10,7 @@
 - [Theme Customization](https://mui.com/material-ui/customization/theming/#custom-variables)
 - [Theme Creation TS](https://stackoverflow.com/questions/59365396/how-to-use-material-ui-custom-theme-in-react-with-typescript)
 - [Theme Creation TS Video](https://www.youtube.com/watch?v=ZyQlpX7lCRE)
+- [Switches](https://mui.com/material-ui/react-switch/#basic-switches)
+- [Button](https://mui.com/material-ui/react-button/#basic-button)
+- [ToolTip](https://mui.com/material-ui/react-tooltip/#main-content)
+- [Custom Component ToolTip](https://stackoverflow.com/questions/57527896/material-ui-tooltip-doesnt-display-on-custom-component-despite-spreading-props)
