@@ -11,7 +11,7 @@ function App() {
     <Box>
       <Stack direction="column" spacing={1.5}>
         <Navbar></Navbar>
-        <Stack spacing={2} justifyContent="space-between" direction="row">
+        <Stack spacing={1.5} justifyContent="space-between" direction="row">
           <LeftSideBar></LeftSideBar>
           <Feed></Feed>
           <RightSideBar></RightSideBar>

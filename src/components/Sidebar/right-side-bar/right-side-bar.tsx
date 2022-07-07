@@ -11,7 +11,7 @@ const RightSideBar = () => {
   return (
     <Box
       bgcolor="pink"
-      flex={1}
+      flex={1.5}
       p={2}
       sx={{ display: { xs: "none", sm: "block" } }}
     >
