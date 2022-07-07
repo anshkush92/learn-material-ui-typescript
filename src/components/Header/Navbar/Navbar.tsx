@@ -24,6 +24,7 @@ import { Icons } from "./Icons";
 import { Search } from "./Search";
 import { StyledToolBar } from "./StyledToolbar";
 import CustomBadge from "./CustomBadge";
+import AddPost from "../../AddPost/AddPost";
 
 // Test -------------------------- Structure of Props ----------------------------------
 

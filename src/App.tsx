@@ -1,5 +1,6 @@
 import { Stack } from "@mui/material";
 import Box from "@mui/material/Box";
+import AddPost from "./components/AddPost/AddPost";
 import Footer from "./components/Footer/Footer";
 import Feed from "./components/Header/Feed/feed";
 import Navbar from "./components/Header/Navbar/Navbar";
@@ -16,8 +17,8 @@ function App() {
           <Feed></Feed>
           <RightSideBar></RightSideBar>
         </Stack>
-
         <Footer></Footer>
+        <AddPost></AddPost>
       </Stack>
     </Box>
   );

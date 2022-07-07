@@ -18,3 +18,4 @@
 - [Checkboxes](https://mui.com/material-ui/react-checkbox/#main-content)
 - [ImageList](https://mui.com/material-ui/react-image-list/#standard-image-list)
 - [Divider](https://mui.com/material-ui/react-divider/#main-content)
+- [Floating Action Button](https://mui.com/material-ui/react-floating-action-button/#main-content)
