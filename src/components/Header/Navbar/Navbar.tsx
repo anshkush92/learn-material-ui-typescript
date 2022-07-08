@@ -130,7 +130,12 @@ const Navbar = () => {
         </UserBox>
       </StyledToolBar>
 
-      <Menu open={open} anchorEl={anchorElement} onClose={closeMenuHandler}>
+      <Menu
+        open={open}
+        anchorEl={anchorElement}
+        onClose={closeMenuHandler}
+        disableScrollLock={true}
+      >
         <MenuItem onClick={closeMenuHandler}>Profile</MenuItem>
         <MenuItem onClick={closeMenuHandler}>My Account</MenuItem>
         <MenuItem onClick={closeMenuHandler}>Logout</MenuItem>
