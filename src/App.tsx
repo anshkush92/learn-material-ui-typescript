@@ -1,5 +1,5 @@
 import { Stack, ThemeProvider } from "@mui/material";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import DarkThemeContext from "./context/darkTheme";
 import Box from "@mui/material/Box";
 import AddPost from "./components/AddPost/AddPost";
