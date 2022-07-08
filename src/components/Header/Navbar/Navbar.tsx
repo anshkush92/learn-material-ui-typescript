@@ -1,5 +1,5 @@
 // Test -------------------------- Importing the Packages ---------------------------------
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
   AppBar,
   Typography,
@@ -24,20 +24,16 @@ import { Icons } from "./Icons";
 import { Search } from "./Search";
 import { StyledToolBar } from "./StyledToolbar";
 import CustomBadge from "./CustomBadge";
-import AddPost from "../../AddPost/AddPost";
+import DarkThemeContext from "../../../context/darkTheme";
 
 // Test -------------------------- Structure of Props ----------------------------------
 
 // Test -------------------------- The current component ----------------------------------
 const Navbar = () => {
   const [anchorElement, setOpenMenu] = useState<null | HTMLElement>(null);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { isDarkMode, toggleMode } = useContext(DarkThemeContext);
 
   const open = Boolean(anchorElement);
-
-  const toggleMode = () => {
-    setIsDarkMode((previousState) => !previousState);
-  };
 
   const currentThemeIcon = isDarkMode ? (
     <DarkMode></DarkMode>

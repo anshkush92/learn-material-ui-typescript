@@ -12,6 +12,7 @@ import { StyledEngineProvider, ThemeProvider } from "@mui/material";
 
 // Components
 import { theme } from "./components/Test/theme/theme";
+import DarkThemeContextProvider from "./context/dark-theme-context-provider";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -21,7 +22,9 @@ root.render(
     <BrowserRouter>
       <ThemeProvider theme={theme}>
         <StyledEngineProvider injectFirst>
-          <App />
+          <DarkThemeContextProvider>
+            <App />
+          </DarkThemeContextProvider>
         </StyledEngineProvider>
       </ThemeProvider>
     </BrowserRouter>
